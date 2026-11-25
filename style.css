@@ -236,3 +236,41 @@ footer {
   height: 100%;
   border: none;
 }
+
+/* SOUNDCLOUD DARK THEME */
+
+.project iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.soundcloud-credit {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #82918D;
+  margin-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.soundcloud-credit a {
+  color: #82918D;
+  text-decoration: none;
+  border: none;
+}
+
+.soundcloud-credit a:hover {
+  color: #B0C4BB;
+}
+
+/* TRACK TITLES */
+
+.project h2 {
+  color: #D5DDD9;
+  margin-bottom: 12px;
+}
