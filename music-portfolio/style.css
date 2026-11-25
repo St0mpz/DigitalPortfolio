@@ -1,0 +1,187 @@
+
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111216;
+  color: #eeeeee;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.tab:hover,
+.tab.active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1100px;
+  min-height: 75vh;
+  margin: 60px auto;
+  padding: 0 25px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.intro {
+  color: #999;
+  margin-bottom: 35px;
+}
+
+/* PROJECTS */
+.project-grid,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.project p {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0 12px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+/* VIDEO EMBEDS */
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: absolute;
+  inset: 0;
+}
+
+/* ABOUT */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 850px;
+}
+
+.about-content img {
+  width: 100%;
+}
+
+.about-content p {
+  color: #aaa;
+  margin: 15px 0;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #333;
+  padding: 25px;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    gap: 30px;
+  }
+
+  main {
+    margin: 35px auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .project-grid,
+  .video-grid,
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
